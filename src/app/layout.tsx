@@ -17,6 +17,7 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  
   subsets: ["latin"]
 });
 
@@ -40,7 +41,7 @@ export default async function RootLayout({
         <Providers>
           <SessionProvider session={session}>
             <AppLoader>
-              <div className="flex min-h-screen flex-col justify-between">
+              <div className="flex flex-col justify-between min-h-screen">
                 <div className="flex flex-col">
                   <Header />
                   <main
